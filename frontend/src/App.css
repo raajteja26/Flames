@@ -1,0 +1,77 @@
+.flames-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.flames-calculator h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.flames-calculator input {
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+
+  /* Add some box-shadow when focused */
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+  /* Add some styling for placeholder text */
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+
+.flames-calculator button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+
+  /* Add a subtle box-shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  /* Add some extra styling when hovered */
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  /* Remove default focus outline */
+  &:focus {
+    outline: none;
+  }
+
+  /* Disable button pointer events when it's in a loading state */
+  &.loading {
+    pointer-events: none;
+    opacity: 0.8;
+  }
+}
+
+
+.flames-calculator p {
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
+}
