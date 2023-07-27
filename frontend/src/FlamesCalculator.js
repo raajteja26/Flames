@@ -19,8 +19,8 @@ const FlamesCalculator = () => {
   };
 
   const tryOther = () => {
-     setName1("")
-     setName2("")
+    //  setName1("")
+    //  setName2("")
      setResult("")
   }
   const calculateFLAMES = () => {
